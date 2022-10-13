@@ -7,9 +7,10 @@ const gh = require('./gh')
 const rawRedirects = require('./redirects')
 
 const getPathParts = (path) => {
+  const abs = isAbsolute(path)
   const paths = path.replace(/\.mdx?$/, '').split(sep)
 
-  const pathId = posix.join(...paths)
+  const pathId = posix.join(abs ? '/' : '', ...paths)
   const page = posix.basename(pathId)
   const section = posix.dirname(pathId)
 

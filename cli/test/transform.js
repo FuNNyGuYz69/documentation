@@ -105,6 +105,7 @@ t.test('package-json files', async t => {
     '/configuring-npm/package-json',
     '/configuring-npm/package.json',
     '/creating-a-package-json-file',
+    '/creating-a-package.json-file',
     '/files/creating-a-package-json-file',
     '/files/creating-a-package.json-file',
     '/files/package-json',
